@@ -38,6 +38,11 @@ class Employee:
     def __str__(self):
         return "'{}','{}'".format(self.fullname(),self.email)
 
+    def __add__(self, other):
+        return self.pay + other.pay
+    def __len__(self):
+        return len(self.fullname())
+
 emp_1 = Employee('Employee','User',20000)
 emp_2 = Employee('Test','User',30000)
 
@@ -47,3 +52,7 @@ print(emp_2.first)
 print(emp_2) # Checks if str dunker present call str dunker otherwise callback to repr dunker
 print(emp_2.__repr__())
 print(emp_2.__str__())
+
+print(emp_1+emp_2)
+
+print(emp_2.__len__())
