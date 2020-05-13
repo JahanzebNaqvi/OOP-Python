@@ -32,9 +32,14 @@ class Employee:
             return False
         return True
 
+    def __repr__(self):
+        return "Employee('{}','{}','{}')".format(self.first,self.last,self.pay)
 
-emp_1 = Employee('Jahanzeb','Naqvi',20000)
+
+emp_1 = Employee('Employee','User',20000)
 emp_2 = Employee('Test','User',30000)
 
 print(emp_1.first)
 print(emp_2.first)
+
+print(emp_2)
