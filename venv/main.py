@@ -31,3 +31,4 @@ mgr_1.print_emp()
 
 print('Is object a istance of Developer Class',isinstance(dev_1,Developer))
 print('is Developer subclass of Employee: ',issubclass(Developer,Employee))
+print('Is object a istance of Manager Class',isinstance(mgr_1,Manager))
