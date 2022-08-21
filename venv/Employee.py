@@ -45,9 +45,11 @@ class Employee:
 
 emp_1 = Employee('Employee','User',20000)
 emp_2 = Employee('Test','User',30000)
-
+emp_3 = Employee('Hassan','User',90000)
 print(emp_1.first)
 print(emp_2.first)
+
+print(emp_3.first)
 
 print(emp_2) # Checks if str dunker present call str dunker otherwise callback to repr dunker
 print(emp_2.__repr__())
@@ -56,3 +58,9 @@ print(emp_2.__str__())
 print(emp_1+emp_2)
 
 print(emp_2.__len__())
+
+A= emp_3.from_string('Hassan-Khan-344999')
+print(A)
+print(emp_3.__len__())
+
+print(emp_3.last)
